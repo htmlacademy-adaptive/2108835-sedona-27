@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>HTML Academy: Седона</title>
+  <base href="https://htmlacademy-adaptive.github.io/2108835-sedona-27/3/">
+</head>
+<body class="page__body">
+  <header class="main-header">
+    <a class="main-header__logo">
+      <img src="images/main-logo.svg" width="145" height="96" alt="Седона">
+    </a>
+    <nav class="main-nav">
+      <button class="main-nav__toggle" type="button">
+        <span class="visually-hidden">Открыть меню</span>
+      </button>
+      <div class="main-nav__wrapper">
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item ">
+            <a href="index.html">
+              Главная
+            </a>
+          </li>
+          <li class="site-list__item">
+            <a href="photo.html">
+              Фото и Видео
+            </a>
+          </li>
+          <li class="site-list__item site-list__item--current">
+            <a>
+              Форма Отзыва
+            </a>
+          </li>
+          <li class="site-list__item">
+            <a href="#">
+              HTML Academy
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main class="form-container">
+    <div class="description-container">
+      <h2 class="description-container__title">Оставьте свой отзыв</h2>
+      <p class="description-container__paragraph">
+        Помогите нашим отелям стать лучше! оставьте отзыв о них,<br>
+       а также о посещенных вами достопримечательностях</p>
+    </div>
+
+  <div class="contact">
+   <section class="contant__fullname fullname">
+      <h2 class="fullname__title">Представьтесь:</h2>
+      <form action="https://echo.htmlacademy.ru/courses" method="post">
+        <label  for="first-name-field">Имя*:</label> <!--хз нужен тут класс нет для лейбла, если нужен, то это class="fullname__first-name", ну и по порядку class="fullname__last-name"" -->
+        <input type="text" name="name" id="first-name-field" placeholder="Пётр" required>
+        <label for="last-name-field">Фамилия*:</label>
+        <input type="text" name="name" id="last-name-field" placeholder="Пустота" required>
+        <label for="middle-name-field">Отчество:</label>
+       <input type="text" name="name" id="middle-name-field" placeholder="Викторович">
+      </form>
+    </section>
+   <section class="contant__information information">
+      <h2 class="information__title">Контактная информация:</h2>
+      <form action="https://echo.htmlacademy.ru/courses" method="post">
+       <label for="phone-field">Контактный телефон*:</label>
+       <input type="text" name="phone" id="phone-field" placeholder="Введите телефон" required>
+        <button class="button" type="submit">     <!-- не знаю какой класс сюда в кнопку подставить, если честно хочется какой-нибудь class="phone__button--submit, но хз.."-->
+          <span class="visually-hidden">Позвонить</span>
+       </button>
+        <label for="email-field">Электронная почта*:</label>
+        <input type="email" name="e-mail" id="email-field" placeholder="Введите e-mail" required>
+        <button class="button" type="submit">
+          <span class="visually-hidden">Отправить</span>
+      </button>
+      </form>
+    </section>
+  </div>
+
+  <section class="feeling">
+    <fieldset class="feeling__group ">
+      <legend class="feeling__title">Ваше общее впечатление:</legend>
+      <ul class="feeling__list">
+        <li class="feeling__item">
+          <label class="feeling__label">
+            <input class="feeling__input" type="radio" name="type-of-feeling" value="good" checked>
+            <span class="control-mark"></span> <!-- это чтобы потом в цсс сделать красивые кружочки-->
+            <span class="feeling__title">Скорее положительное</span>
+          </label>
+        </li>
+        <li class="feeling__item">
+          <label class="feeling__label">
+            <input class="feeling__input " type="radio" name="type-of-feeling" value="bad">
+            <span class="control-mark"></span>
+            <span class="feeling__title">Скорее отрицательное</span>
+          </label>
+        </li>
+        <li class="feeling__item">
+          <label class="feeling__label">
+            <input class="feeling__input" type="radio" name="type-of-feeling" value="neutral">
+            <span class="control-mark"></span>
+            <span class="feeling__title">Затрудняюсь ответить</span>
+          </label>
+        </li>
+      </ul>
+    </fieldset>
+  </section>
+  <section class="benefits">
+    <h2 class="visually-hidden">Список посещенных достопримичательностей</h2>
+    <div class="benefits__wrappers">
+      <fieldset class="benefits__group">
+        <legend class="benefits__title">Посещенные достопримечательности:</legend>
+        <ul class="benefits__list">
+          <li class="benefits__item">
+            <label class="benefits__label">
+              <input class="benefits__input" type="checkbox" name="swimming-pool" checked>
+              <span class="control-label">Мост Дьявола</span>
+            </label>
+          </li>
+          <li class="benefits__item">
+            <label class="benefits__label">
+              <input class="benefits__input" type="checkbox" name="swimming-pool" checked>
+              <span class="control-label">Гора-Колокол</span>
+            </label>
+          </li>
+          <li class="benefits__item">
+            <label class="benefits__label">
+              <input class="benefits__input" type="checkbox" name="swimming-pool" checked>
+              <span class="control-label">Слайд-парк</span>
+            </label>
+          </li>
+          <li class="benefits__item">
+            <label class="benefits__label">
+              <input class="benefits__input" type="checkbox" name="swimming-pool">
+              <span class="control-label">Красные скалы</span>
+            </label>
+          </li>
+        </ul>
+      </fieldset>
+    </div>
+  </section>
+  <section class="feedback">
+    <h2 class="feedback__title">Опишите свои эмоции:</h2>
+    <div class="feedback__row">
+      <textarea rows="5">Опишите подробно все свои восторги</textarea>
+    </div>
+  </section>
+  <section class="review">
+    <h2 class="visually-hidden">Кнопка отправки отзыва</h2>
+    <div class="button button__review">
+      <input type="submit" value="ОТПРАВИТЬ ОТЗЫВ">
+    </div>
+    <p class="review__description">* — обязательные поля</p>
+  </section>
+
+  <footer class="main-footer">
+    <div class="main-footer__wrapper">
+      <div class="main-footer__hashtag hashtag">
+        <b class="hashtag__text">#visitSEDONA</b>
+      </div>
+      <div class="main-footer__social social">
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
+              <span class="visually-hidden">Вконтакте</span>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">
+              <span class="visually-hidden">Телеграм</span>
+            </a>
+            <li class="social__item">
+              <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">
+                <span class="visually-hidden">Ютуб</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="main-footer__copyright copyright">
+          <b class="copyright__text">Разработано:</b>
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+            <img class="copiright__link--image" src="img/htmlacademy.svg" width="27" height="34">
+            <span class="visually-hidden">HTML Academy</span>
+          </a>
+        </div>
+      </div>
+    </footer>
+  </main>
+</body>
+</html>
