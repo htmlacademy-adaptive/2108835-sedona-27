@@ -66,14 +66,8 @@
       <form action="https://echo.htmlacademy.ru/courses" method="post">
        <label for="phone-field">Контактный телефон*:</label>
        <input type="text" name="phone" id="phone-field" placeholder="Введите телефон" required>
-        <button class="button" type="submit">     <!-- не знаю какой класс сюда в кнопку подставить, если честно хочется какой-нибудь class="phone__button--submit, но хз.."-->
-          <span class="visually-hidden">Позвонить</span>
-       </button>
         <label for="email-field">Электронная почта*:</label>
         <input type="email" name="e-mail" id="email-field" placeholder="Введите e-mail" required>
-        <button class="button" type="submit">
-          <span class="visually-hidden">Отправить</span>
-      </button>
       </form>
     </section>
   </div>
@@ -143,14 +137,11 @@
   <section class="feedback">
     <h2 class="feedback__title">Опишите свои эмоции:</h2>
     <div class="feedback__row">
-      <textarea rows="5">Опишите подробно все свои восторги</textarea>
+      <textarea rows="5" placeholder="Опишите подробно все свои восторги"></textarea>
     </div>
   </section>
   <section class="review">
     <h2 class="visually-hidden">Кнопка отправки отзыва</h2>
-    <div class="button button__review">
-      <input type="submit" value="ОТПРАВИТЬ ОТЗЫВ">
-    </div>
     <p class="review__description">* — обязательные поля</p>
   </section>
 
