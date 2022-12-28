@@ -14,6 +14,18 @@ body {
   background-color: @background-gray-first;
   min-height: 100%;
   margin: 0;
+
+  @media (min-width: @tablet-width) {
+    .page__body {
+      width: 768px;
+    }
+    };
+
+  @media (min-width: @desktop-width) {
+    .page__body {
+       width: 1200px;
+     }
+}
 }
 
 .page__body {
