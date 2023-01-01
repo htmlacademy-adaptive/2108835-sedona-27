@@ -14,20 +14,35 @@ body {
   background-color: @background-gray-first;
   min-height: 100%;
   margin: 0;
+  background-size: cover;
 
   @media (min-width: @tablet-width) {
     .page__body {
       width: 768px;
     }
-    };
+    }
 
   @media (min-width: @desktop-width) {
     .page__body {
        width: 1200px;
      }
 }
-}
+};
 
 .page__body {
   margin: 0 auto;
+}
+
+.wrapper {
+  width: auto;
+  text-align: center;
+
+  @media (min-width: @tablet-width) {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: @desktop-width){
+    box-shadow:0 0 40px 0 #dbdbdb ;
+  }
 }
