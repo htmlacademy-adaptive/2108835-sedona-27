@@ -2,11 +2,13 @@
 <html class="page" lang="ru">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Седона</title>
   <link href="css/style.css" rel="stylesheet">
   <base href="https://htmlacademy-adaptive.github.io/2108835-sedona-27/5/">
 </head>
 <body class="page__body">
+  <div class="wrapper">
   <header class="main-header">
     <a class="main-header__logo ">
       <img class="main-header__logo-image" src="img/main-logo.svg" width="145" height="96" alt="Седона">
@@ -43,6 +45,11 @@
   </header>
 
   <main class="form-container">
+
+    <div class="main-logo-container">
+      <img class="main-logo" src="img/catalog-main-logo-container.png" alt="Главная" width="461" height="350">
+    </div>
+
     <div class="description-container">
       <h2 class="description-container__title">Оставьте свой отзыв</h2>
       <p class="description-container__paragraph">
@@ -50,9 +57,9 @@
        а также о посещенных вами достопримечательностях</p>
     </div>
 
+<form class="form-feedback" action="https://echo.htmlacademy.ru/courses" method="post">
   <div class="contact">
-  <form action="https://echo.htmlacademy.ru/courses" method="post">
-    <section class="contant__fullname fullname">
+    <section class="contact__fullname fullname">
        <h2 class="fullname__title">Представьтесь:</h2>
        <label  for="first-name-field">Имя*:</label> <!--хз нужен тут класс нет для лейбла, если нужен, то это class="fullname__first-name", ну и по порядку class="fullname__last-name"" -->
        <input type="text" name="name" id="first-name-field" placeholder="Пётр" required>
@@ -61,7 +68,7 @@
         <label for="middle-name-field">Отчество:</label>
         <input type="text" name="name" id="middle-name-field" placeholder="Викторович">
      </section>
-     <section class="contant__information information">
+     <section class="contact__information information">
         <h2 class="information__title">Контактная информация:</h2>
          <label for="phone-field">Контактный телефон*:</label>
         <input type="text" name="phone" id="phone-field" placeholder="Введите телефон" required>
@@ -98,51 +105,51 @@
         </ul>
      </fieldset>
    </section>
-  <section class="benefits">
-    <h2 class="visually-hidden">Список посещенных достопримичательностей</h2>
-    <div class="benefits__wrappers">
-      <fieldset class="benefits__group">
-        <legend class="benefits__title">Посещенные достопримечательности:</legend>
-        <ul class="benefits__list">
-          <li class="benefits__item">
-            <label class="benefits__label">
-              <input class="benefits__input" type="checkbox" name="swimming-pool" checked>
-              <span class="control-label">Мост Дьявола</span>
-            </label>
-          </li>
-          <li class="benefits__item">
-            <label class="benefits__label">
-              <input class="benefits__input" type="checkbox" name="swimming-pool" checked>
-              <span class="control-label">Гора-Колокол</span>
-            </label>
-          </li>
-          <li class="benefits__item">
-            <label class="benefits__label">
-              <input class="benefits__input" type="checkbox" name="swimming-pool" checked>
-              <span class="control-label">Слайд-парк</span>
-            </label>
-          </li>
-          <li class="benefits__item">
-            <label class="benefits__label">
-              <input class="benefits__input" type="checkbox" name="swimming-pool">
-              <span class="control-label">Красные скалы</span>
-            </label>
-          </li>
-        </ul>
-      </fieldset>
-    </div>
-  </section>
-  <section class="feedback">
-    <h2 class="feedback__title">Опишите свои эмоции:</h2>
-    <div class="feedback__row">
-      <textarea rows="5" placeholder="Опишите подробно все свои восторги"></textarea>
-    </div>
-  </section>
-  <section class="review">
-    <h2 class="visually-hidden">Кнопка отправки отзыва</h2>
-    <input type="submit">
-    <p class="review__description">* — обязательные поля</p>
-  </section>
+    <section class="benefits">
+      <h2 class="visually-hidden">Список посещенных достопримичательностей</h2>
+      <div class="benefits__wrappers">
+       <fieldset class="benefits__group">
+         <legend class="benefits__title">Посещенные достопримечательности:</legend>
+         <ul class="benefits__list">
+           <li class="benefits__item">
+             <label class="benefits__label">
+                <input class="benefits__input" type="checkbox" name="swimming-pool" checked>
+                <span class="control-label">Мост Дьявола</span>
+             </label>
+            </li>
+            <li class="benefits__item">
+             <label class="benefits__label">
+               <input class="benefits__input" type="checkbox" name="swimming-pool" checked>
+               <span class="control-label">Гора-Колокол</span>
+             </label>
+            </li>
+           <li class="benefits__item">
+              <label class="benefits__label">
+                <input class="benefits__input" type="checkbox" name="swimming-pool" checked>
+                <span class="control-label">Слайд-парк</span>
+              </label>
+           </li>
+           <li class="benefits__item">
+             <label class="benefits__label">
+               <input class="benefits__input" type="checkbox" name="swimming-pool">
+               <span class="control-label">Красные скалы</span>
+             </label>
+           </li>
+          </ul>
+       </fieldset>
+      </div>
+    </section>
+    <section class="feedback">
+      <h2 class="feedback__title">Опишите свои эмоции:</h2>
+      <div class="feedback__row">
+        <textarea class="feedback__description" rows="5" placeholder="Опишите подробно все свои восторги"></textarea>
+      </div>
+   </section>
+    <section class="review">
+     <h2 class="visually-hidden">Кнопка отправки отзыва</h2>
+      <input type="submit">
+      <p class="review__description">* — обязательные поля</p>
+    </section>
 </form>
 
   <footer class="main-footer">
@@ -178,5 +185,6 @@
       </div>
     </footer>
   </main>
+</div>
 </body>
 </html>

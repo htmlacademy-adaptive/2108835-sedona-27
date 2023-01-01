@@ -2,11 +2,13 @@
 <html class="page" lang="ru">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Седона</title>
   <link href="css/style.css" rel="stylesheet">
   <base href="https://htmlacademy-adaptive.github.io/2108835-sedona-27/5/">
 </head>
 <body class="page__body">
+  <div class="wrapper">
   <header class="main-header">
     <a class="main-header__logo ">
       <img class="main-header__logo-image" src="img/main-logo.svg" width="145" height="96" alt="Седона">
@@ -43,6 +45,11 @@
   </header>
 
 <main class="photo-container">
+
+  <div class="main-logo-container">
+    <img class="main-logo" src="img/catalog-main-logo-container.png" alt="Главная" width="461" height="350">
+  </div>
+
   <div class="description-container">
     <h2 class="description-container__title">Фото и видео</h2>
     <p class="description-container__paragraph">
@@ -51,46 +58,70 @@
 
   <section class="catalog">
     <h2 class="visually-hidden">Фотографии Седоны</h2>
+    <ul class="cards">
+      <li class="card">
+        <figure class="card__content">
+          <div class="card__photo">
+            <img src="img/catalog-photo1.jpeg" width="1200" height="400" alt="Степь и закат.">
+          </div>
+          <figcaption class="card__description">
+            <h3 class="card__title">Неродные просторы</h3>
+            <p class="card__description">Автор фото: Борис</p>
+            <div class="grade">
+              <span class="grade__title">1350</span>
+              <img src="" width="23" height="21" alt="Лайк.">
+            </div>
+          </figcaption>
+        </figure>
+      </li>
 
-    <div class="card">
-      <img src="" width="280" height="280" alt="Степь и закат.">
-      <h3 class="card__title">Неродные просторы</h3>
-      <p class="card__description">Автор фото: Борис</p>
-      <div class="grade">
-        <span class="grade__title">1350</span>
-        <img src="" width="23" height="21" alt="Лайк.">
-      </div>
-    </div>
+      <li class="card">
+        <figure class="card__content">
+          <div class="card__photo">
+            <img src="img/catalog-photo2.jpeg" width="400" height="267" alt="Дорога и закат.">
+          </div>
+          <figcaption class="card__description">
+            <h3 class="card__title">Местная растительность</h3>
+            <p class="card__description">Автор фото: Сергей</p>
+            <div class="grade">
+              <span class="grade__title">143</span>
+              <img src="" width="23" height="21" alt="Лайк.">
+            </div>
+          </figcaption>
+        </figure>
+      </li>
 
-    <div class="card">
-      <img src="" width="280" height="280" alt="Дорога и закат.">
-      <h3 class="card__title">Местная растительность</h3>
-      <p class="card__description">Автор фото: Сергей</p>
-      <div class="grade">
-        <span class="grade__title">143</span>
-        <img src="" width="23" height="21" alt="Лайк.">
-      </div>
-    </div>
+      <li class="card">
+        <figure class="card__content">
+          <div class="card__photo">
+            <img src="img/catalog-photo3.jpeg" width="400" height="267" alt="Дорога на север.">
+          </div>
+          <figcaption class="card__description">
+            <h3 class="card__title">Дорога на север</h3>
+            <p class="card__description">Автор фото: Петр</p>
+            <div class="grade">
+              <span class="grade__title">96</span>
+              <img src="" width="23" height="21" alt="Лайк.">
+            </div>
+          </figcaption>
+        </figure>
+      </li>
 
-    <div class="card">
-      <img src="" width="280" height="280" alt="Дорога на север.">
-      <h3 class="card__title">Дорога на север</h3>
-      <p class="card__description">Автор фото: Петр</p>
-      <div class="grade">
-        <span class="grade__title">96</span>
-        <img src="" width="23" height="21" alt="Лайк.">
-      </div>
-    </div>
-
-    <div class="card">
-      <img src="" width="280" height="280" alt="Каньон.">
-      <h3 class="card__title">Мост дьявола</h3>
-      <p class="card__description">Автор фото: Антон</p>
-      <div class="grade">
-        <span class="grade__title">254</span>
-        <img src="" width="23" height="21" alt="Лайк.">
-      </div>
-    </div>
+      <li class="card">
+        <figure class="card__content">
+          <div class="card__photo">
+            <img src="img/catalog-photo4.jpeg" width="400" height="267" alt="Каньон.">
+          </div>
+          <figcaption class="card__description">
+            <h3 class="card__title">Мост дьявола</h3>
+            <p class="card__description">Автор фото: Антон</p>
+            <div class="grade">
+              <span class="grade__title">254</span>
+              <img src="" width="23" height="21" alt="Лайк.">
+            </div>
+          </figcaption>
+        </figure>
+      </li>
 
   </section>
   <div class="interested">
@@ -99,7 +130,7 @@
       раз!</p>
   </div>
   <div class="video">
-    <img src="" width="280" height="177" alt="видео.">
+    <img src="img/catalog-video.jpeg" width="280" height="177" alt="видео.">
   </div>
 
   <footer class="main-footer">
@@ -134,6 +165,7 @@
         </div>
       </div>
     </footer>
-</main>
+  </main>
+</div>
 </body>
 </html>
