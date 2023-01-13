@@ -9,35 +9,37 @@
 <body class="page__body">
   <div class="wrapper">
   <header class="main-header">
-    <a class="main-header__logo ">
-      <img class="main-header__logo-image" src="img/main-logo.svg" width="145" height="96" alt="Седона">
-    </a>
-    <nav class="main-nav">
+    <nav class="main-nav main-nav--closed">
       <button class="main-nav__toggle" type="button">
         <span class="visually-hidden">Открыть меню</span>
       </button>
       <div class="main-nav__wrapper">
         <ul class="main-nav__list site-list">
-          <li class="site-list__item ">
-            <a href="index.html">
+          <li class="site-list__item  ">
+            <a class="site-list__item-link" href="index.html">
               Главная
             </a>
           </li>
           <li class="site-list__item">
-            <a href="photo.html">
+            <a class="site-list__item-link" href="photo.html">
               Фото и Видео
             </a>
           </li>
           <li class="site-list__item site-list__item--current">
-            <a>
+            <a class="site-list__item-link">
               Форма Отзыва
             </a>
           </li>
           <li class="site-list__item">
-            <a href="#">
+            <a class="site-list__item-link" href="#">
               HTML Academy
             </a>
           </li>
+          <div class="site-list__item--logo">
+            <a class="main-nav__logo">
+              <img src="img/main-logo.svg" width="185" height="96" alt="Седона">
+            </a>
+          </div>
         </ul>
       </div>
     </nav>
@@ -77,7 +79,7 @@
    </div>
 
    <section class="feeling">
-     <fieldset class="feeling__group ">
+     <fieldset class="form-feedback__section">
         <legend class="feeling__title">Ваше общее впечатление:</legend>
         <ul class="feeling__list">
           <li class="feeling__item">
@@ -107,7 +109,7 @@
     <section class="benefits">
       <h2 class="visually-hidden">Список посещенных достопримичательностей</h2>
       <div class="benefits__wrappers">
-       <fieldset class="benefits__group">
+       <fieldset class="form-feedback__section">
          <legend class="benefits__title">Посещенные достопримечательности:</legend>
          <ul class="benefits__list">
            <li class="benefits__item">
@@ -185,5 +187,6 @@
     </footer>
   </main>
 </div>
+<script src="./js/script.js" ></script>
 </body>
 </html>

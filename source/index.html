@@ -8,18 +8,15 @@
 </head>
 <body class="page__body">
   <div class="wrapper">
-  <header class="main-header">
-    <a class="main-header__logo ">
-      <img class="main-header__logo-image" src="img/main-logo.svg" width="145" height="96" alt="Седона">
-    </a>
-    <nav class="main-nav">
+  <header class="main-header ">
+    <nav class="main-nav main-nav--closed">
       <button class="main-nav__toggle" type="button">
         <span class="visually-hidden">Открыть меню</span>
       </button>
       <div class="main-nav__wrapper">
         <ul class="main-nav__list site-list">
           <li class="site-list__item  site-list__item--current">
-            <a class="ssite-list__item-link">
+            <a class="site-list__item-link">
               Главная
             </a>
           </li>
@@ -38,6 +35,11 @@
               HTML Academy
             </a>
           </li>
+          <div class="site-list__item--logo">
+            <a class="main-nav__logo">
+              <img src="img/main-logo.svg" width="185" height="96" alt="Седона">
+            </a>
+          </div>
         </ul>
       </div>
     </nav>
@@ -65,7 +67,12 @@
                 <p class="advantage__description">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
               </div>
               <div class="advantage__photo">
-                <img class="advantage__img" src="img/main-gorodok.jpeg" alt="городок Седона" width="800" height="400">
+                <picture>
+                  <source media="(max-width: 767px)" srcset="img/photo-city-mobile.jpg">
+                  <source media="(max-width: 1279px)" srcset="img/photo-city.jpg">
+                  <source media="(min-width: 1280px)" srcset="img/photo-city-desktop.jpg">
+                  <img class="advantage__img" src="img/photo-city.jpg" alt="городок Седона" width="800" height="400">
+                </picture>
               </div>
             </div>
 
@@ -96,13 +103,15 @@
           </div>
 
           <div class="advantage">
-            <div class="advantage__text">
-              <h3 class="advantage__title">ТАМ ЕСТЬ Мост дьявола</h3>
-              <p class="advantage__number">№2</p>
-              <p class="advantage__description">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
-            </div>
-            <div class="advantage__photo">
-              <img src="img/main-bridge.jpeg" alt="мост дьявола" width="800" height="400">
+            <div class="advantage__inner">
+              <div class="advantage__text">
+               <h3 class="advantage__title">ТАМ ЕСТЬ Мост дьявола</h3>
+                <p class="advantage__number">№2</p>
+               <p class="advantage__description">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
+             </div>
+              <div class="advantage__photo">
+               <img src="img/main-bridge.jpeg" alt="мост дьявола" width="800" height="400">
+              </div>
             </div>
           </div>
 
@@ -144,6 +153,15 @@
 
       <section class="map">
         <h2 class="visually-hidden">Карта</h2>
+        <iframe class="maps__content"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d295903.0559638879!2d-111.62354485524823!3d34.974205362625774!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da300cd6a52d3%3A0xd0b62ffa7e756ca6!2sSedona!5e0!3m2!1sru!2sru!4v1669822568757!5m2!1sru!2sru"
+            width="100%"
+            height="350"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
       </section>
 
       <footer class="main-footer">
@@ -180,5 +198,6 @@
         </footer>
     </main>
   </div>
+  <script src="./js/script.js" ></script>
 </body>
 </html>

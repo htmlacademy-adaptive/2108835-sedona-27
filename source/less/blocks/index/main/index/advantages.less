@@ -7,41 +7,72 @@
 
   @media (min-width: @tablet-width){
     margin: 0;
-    max-width: 768px;
   }
 
   @media (min-width: @desktop-width){
     margin: 0;
-    max-width: 1200px;
   }
 }
 
+
 .advantage {
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
+  width: 100%;
   color: #ffff;
   background-color:#81b3d2;
   margin: 0;
   padding: 0;
   list-style-type: none;
 
+
   @media (min-width: @tablet-width) {
-    display: flex;
-    flex-wrap: wrap;
+
+    .advantage:first-child {
+      padding-top: 0;
+      background-image: none;
+    }
+
+    flex-direction: row;
     };
 
   @media (min-width: @desktop-width){
-    display: flex;
-    flex-wrap: wrap;
+
   };
+}
+
+
+.advantage__photo {
+
+  @media (min-width: @tablet-width) {
+    width: 512px;
+    height: 256px;
+  }
 }
 
 .advantage__inner {
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding-bottom: 20px;
+
+  @media (min-width: @tablet-width) {
+    flex-direction: row;
+    padding-bottom: 0;
+  }
+}
+
+.advantage__text {
+  width: 320px;
+  padding: 40px 20px;
+  line-height: 21px;
 }
 
 .advantage--not-important {
   display: flex;
+  flex-direction: column;
   color: #000000;
   background-color: #e6e6e6;
   justify-content: space-between;
