@@ -46,10 +46,9 @@
   </header>
 
 <main class="photo-container">
-
-  <div class="main-logo-container">
-    <img class="main-logo" src="img/catalog-main-logo-container.png" alt="Главная" width="461" height="350">
-  </div>
+  <section class="hero-photo">
+      <img class="photo-logo" src="img/catalog-main-logo-container.png" alt="Главная" width="461" height="80">
+  </section>
 
   <div class="description-container">
     <h2 class="description-container__title">Фото и видео</h2>
@@ -63,7 +62,16 @@
       <li class="card">
         <figure class="card__content">
           <div class="card__photo">
-            <img src="img/catalog-photo1.jpeg" width="1200" height="400" alt="Степь и закат.">
+            <picture>
+              <source type="image/jpg" media="(min-width: 1200px)" srcset="img/photo/card1/desktop-card-1@1x.jpg 1x, img/photo/card1/desktop-card-1@2x.jpg 2x" width="1200" height="400">
+              <source type="image/jpg" media="(min-width: 768px)" srcset="img/photo/card1/tablet-card-1@1x.jpg 1x, img/photo/card1/tablet-card-1@2x.jpg 2x" width="648" height="400">
+              <source type="image/jpg"  srcset="img/photo/card1/mobile-card-1@1x.jpg 1x, img/photo/card1/mobile-card-1@2x.jpg 2x" width="280" height="280">
+
+              <source srcset="img/photo/card1/desktop-card-1@1x.jpg 1x, img/photo/card1/desktop-card-1@2x.jpg 2x" width="1200" height="400"  type="image/jpeg" media="(min-width:1200px)">
+              <source srcset="img/photo/card1/tablet-card-1@1x.jpg 1x, img/photo/card1/tablet-card-1@2x.jpg 2x" width="648" height="400" type="image/jpeg" media="(min-width:768px)">
+              <img class="card__img" src="img/photo/card1/mobile-card-1@1x.jpg" width="280" height="280"
+              srcset="img/photo/card1/mobile-card-1@1x.jpg 1x, img/photo/card1/mobile-card-1@2x.jpg 2x"  alt="дорога на закате.">
+            </picture>
           </div>
           <figcaption class="card__description">
             <h3 class="card__title">Неродные просторы</h3>
@@ -79,7 +87,16 @@
       <li class="card">
         <figure class="card__content">
           <div class="card__photo">
-            <img src="img/catalog-photo2.jpeg" width="400" height="267" alt="Дорога и закат.">
+            <picture>
+              <source type="image/jpg" media="(min-width: 1200px)"  srcset="img/photo/card2/desktop-card-2@1x.jpg 1x, img/photo/card2/desktop-card-2@2x.jpg 2x" width="400" height="267">
+              <source type="image/jpg" media="(min-width: 768px)" srcset="img/photo/card2/tablet-card-2@1x.jpg 1x, img/photo/card2/tablet-card-2@2x.jpg 2x" width="324" height="267">
+              <source type="image/jpg"  srcset="img/photo/card2/mobile-card-2@1x.jpg 1x, img/photo/card2/mobile-card-2@2x.jpg 2x" width="280" height="280">
+
+              <source srcset="img/photo/card2/desktop-card-2@1x.jpg 1x, img/photo/card2/desktop-card-2@2x.jpg 2x" width="400" height="267"  type="image/jpeg" media="(min-width:1200px)">
+              <source srcset="img/photo/card2/tablet-card-2@1x.jpg 1x, img/photo/card2/tablet-card-2@2x.jpg 2x" width="324" height="267" type="image/jpeg" media="(min-width:768px)">
+              <img class="card__img" src="img/photo/card2/mobile-card-2@1x.jpg" width="280" height="280"
+              srcset="img/photo/card2/mobile-card-2@1x.jpg 1x, img/photo/card2/mobile-card-2@2x.jpg 2x"  alt="цветущий кактус.">
+            </picture>
           </div>
           <figcaption class="card__description">
             <h3 class="card__title">Местная растительность</h3>
@@ -95,7 +112,16 @@
       <li class="card">
         <figure class="card__content">
           <div class="card__photo">
-            <img src="img/catalog-photo3.jpeg" width="400" height="267" alt="Дорога на север.">
+            <picture>
+              <source type="image/jpg" media="(min-width: 1200px)"  srcset="img/photo/card3/desktop-card-3@1x.jpg 1x, img/photo/card3/desktop-card-3@2x.jpg 2x" width="400" height="267">
+              <source type="image/jpg" media="(min-width: 768px)" srcset="img/photo/card3/tablet-card-3@1x.jpg 1x, img/photo/card3/tablet-card-3@2x.jpg 2x" width="324" height="267">
+              <source type="image/jpg"  srcset="img/photo/card3/mobile-card-3@1x.jpg 1x, img/photo/card3/mobile-card-3@2x.jpg 2x" width="280" height="280">
+
+              <source srcset="img/photo/card3/desktop-card-3@1x.jpg 1x, img/photo/card3/desktop-card-3@2x.jpg 2x" width="400" height="267"  type="image/jpeg" media="(min-width:1200px)">
+              <source srcset="img/photo/card3/tablet-card-3@1x.jpg 1x, img/photo/card3/tablet-card-3@2x.jpg 2x" width="324" height="267" type="image/jpeg" media="(min-width:768px)">
+              <img class="card__img" src="img/photo/card3/mobile-card-3@1x.jpg" width="280" height="280"
+              srcset="img/photo/card3/mobile-card-3@1x.jpg 1x, img/photo/card3/mobile-card-3@2x.jpg 2x"  alt="извилистая дорога.">
+            </picture>
           </div>
           <figcaption class="card__description">
             <h3 class="card__title">Дорога на север</h3>
@@ -111,7 +137,16 @@
       <li class="card">
         <figure class="card__content">
           <div class="card__photo">
-            <img src="img/catalog-photo4.jpeg" width="400" height="267" alt="Каньон.">
+            <picture class="card__picture">
+              <source type="image/jpg" media="(min-width: 1200px)" srcset="img/photo/card4/desktop-card-4@1x.jpg 1x, img/photo/card4/desktop-card-4@2x.jpg 2x" width="400" height="267">
+              <source type="image/jpg" media="(min-width: 768px)" srcset="img/photo/card4/tablet-card-4@1x.jpg 1x, img/photo/card4/tablet-card-4@2x.jpg 2x" width="324" height="267">
+              <source type="image/jpg"  srcset="img/photo/card4/mobile-card-4@1x.jpg 1x, img/photo/card4/mobile-card-4@2x.jpg 2x" width="280" height="280">
+
+              <source srcset="img/photo/card4/desktop-card-4@1x.jpg 1x, img/photo/card4/desktop-card-4@2x.jpg 2x" width="400" height="267"  type="image/jpeg" media="(min-width:1200px)">
+              <source srcset="img/photo/card4/tablet-card-4@1x.jpg 1x, img/photo/card4/tablet-card-4@2x.jpg 2x" width="324" height="267" type="image/jpeg" media="(min-width:768px)">
+              <img class="card__img" src="img/photo/card4/mobile-card-4@1x.jpg" width="280" height="280"
+              srcset="img/photo/card4/mobile-card-4@1x.jpg 1x, img/photo/card4/mobile-card-4@2x.jpg 2x"  alt="мост камень.">
+            </picture>
           </div>
           <figcaption class="card__description">
             <h3 class="card__title">Мост дьявола</h3>
@@ -131,7 +166,16 @@
       раз!</p>
   </div>
   <div class="video">
-    <img src="img/catalog-video.jpeg" width="280" height="177" alt="видео.">
+    <picture>
+      <source type="image/jpg" media="(min-width: 1200px)" srcset="img/photo/video/desktop/video-desktop@1x.jpg 1x, img/photo/video/desktop/video-desktop@2x.jpg 2x" width="800" height="500">
+      <source type="image/jpg" media="(min-width: 768px)" srcset="img/photo/video/tablet/video-tablet@1x.jpg 1x, img/photo/video/tablet/video-tablet@2x.jpg 2x" width="648" height="500">
+      <source type="image/jpg"  srcset="img/photo/video/mobile/video-mobile@1x.jpg 1x, img/photo/video/mobile/video-mobile@2x.jpg 2x" width="280" height="177">
+
+      <source srcset="img/photo/video/desktop/video-desktop@1x.jpg 1x, img/photo/video/desktop/video-desktop@2x.jpg 2x" width="800" height="500"  type="image/jpeg" media="(min-width:1200px)">
+      <source srcset="img/photo/video/tablet/video-tablet@1x.jpg 1x, img/photo/video/tablet/video-tablet@2x.jpg 2x" width="648" height="500" type="image/jpeg" media="(min-width:768px)">
+      <img class="card__img" src="img/photo/video/mobile/video-mobile@1x.jpg" width="280" height="177"
+      srcset="img/photo/video/mobile/video-mobile@1x.jpg 1x, img/photo/video/mobile/video-mobile@2x.jpg 2x"  alt="Видео">
+    </picture>
   </div>
 
   <footer class="main-footer">

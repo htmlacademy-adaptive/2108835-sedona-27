@@ -1,0 +1,49 @@
+.hero-photo {
+  width: 100%;
+  min-height: 158px;
+
+  @media (max-width: 767px) {
+  background:
+    url("../img/triangle-first.svg") no-repeat,
+    url("../img/catalog-back-mobile@1x.jpg") no-repeat;
+  background-position: 50% bottom;
+}
+
+@media (min-resolution: 2dppx) {
+  .hero {
+    background:
+      url("../img/triangle-first.svg") no-repeat,
+      url("../img/catalog-back-mobile@2x.jpg") no-repeat;
+    background-position: 50% bottom;
+    background-size: auto, 901px 389px;
+  }
+}
+
+@media (min-width: @tablet-width){
+  min-height: 290px;
+
+  background:
+    url("../img/triangle-first.svg") no-repeat,
+    url("../img/catalog-back-desktop@1x.jpg") no-repeat;
+    background-position: 50% bottom;
+}
+
+    @media (min-resolution: 2dppx) {
+
+    background:
+      url("../img/triangle-first.svg") no-repeat,
+      url("../img/catalog-back-desktop@2x.jpg") no-repeat;
+      background-position: 50% bottom;
+      background-size: auto auto, 100%;
+}
+
+.photo-logo {
+  width: 229px;
+  margin-top: 35px;
+
+  @media (min-width: @tablet-width) {
+    width: 460px;
+    margin-top: 95px;
+  }
+}
+}
