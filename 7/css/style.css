@@ -132,6 +132,16 @@
   padding: 50px 0;
   background-color: #ffffff;
 }
+@media (min-width: 768px) {
+  .main-footer__wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 60px;
+    align-items: center;
+  }
+}
 .copyright {
   display: flex;
   justify-content: center;
@@ -230,6 +240,16 @@
   background-color: #e6e6e6;
   justify-content: space-between;
 }
+@media (min-width: 768px) {
+  .advantage--not-important {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .advantage--not-important .advantage__inner {
+    width: 33%;
+  }
+}
 .service__list {
   display: flex;
   flex-direction: column;
@@ -243,7 +263,11 @@
 @media (min-width: 768px) {
   .service__list {
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
+  }
+  .service__list .service__item {
+    width: 33%;
   }
 }
 .map iframe {
@@ -275,6 +299,13 @@
     background: url("../img/triangle-first.svg") no-repeat, url("../img/back-desktop@1x.jpg") no-repeat;
     background-position: 50% bottom;
     background-size: auto,1200px 518px;
+  }
+}
+@media (min-resolution: 2dppx) {
+  .hero {
+    background: url("../img/triangle-first.svg") no-repeat, url("../img/back-desktop@2x.jpg") no-repeat;
+    background-position: 50% bottom;
+    background-size: auto, 1200px 518px;
   }
 }
 .main-logo-container {
@@ -343,8 +374,15 @@
 @media (min-width: 768px) {
   .hero-photo {
     min-height: 290px;
-    background: url("../img/triangle-first.svg") no-repeat, url("../img/catalog-back-desktop.jpg") no-repeat;
+    background: url("../img/triangle-first.svg") no-repeat, url("../img/catalog-back-desktop@1x.jpg") no-repeat;
     background-position: 50% bottom;
+  }
+}
+@media (min-resolution: 2dppx) {
+  .hero-photo {
+    background: url("../img/triangle-first.svg") no-repeat, url("../img/catalog-back-desktop@2x.jpg") no-repeat;
+    background-position: 50% bottom;
+    background-size: auto auto, 100%;
   }
 }
 .hero-photo .photo-logo {
@@ -542,7 +580,6 @@ body {
   min-height: 100%;
   margin: 0;
   word-break: break-word;
-  background-color: #F2F2F2;
   background-size: cover;
 }
 @media (min-width: 768px) {
