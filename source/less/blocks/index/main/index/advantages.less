@@ -81,6 +81,16 @@
   color: #000000;
   background-color: #e6e6e6;
   justify-content: space-between;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    .advantage__inner {
+      width: 33%;
+    }
+  };
 }
 
 

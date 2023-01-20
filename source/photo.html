@@ -166,7 +166,16 @@
       раз!</p>
   </div>
   <div class="video">
-    <img src="img/catalog-video.jpeg" width="280" height="177" alt="видео.">
+    <picture>
+      <source type="image/jpg" media="(min-width: 1200px)" srcset="img/photo/video/desktop/video-desktop@1x.jpg 1x, img/photo/video/desktop/video-desktop@2x.jpg 2x" width="800" height="500">
+      <source type="image/jpg" media="(min-width: 768px)" srcset="img/photo/video/tablet/video-tablet@1x.jpg 1x, img/photo/video/tablet/video-tablet@2x.jpg 2x" width="648" height="500">
+      <source type="image/jpg"  srcset="img/photo/video/mobile/video-mobile@1x.jpg 1x, img/photo/video/mobile/video-mobile@2x.jpg 2x" width="280" height="177">
+
+      <source srcset="img/photo/video/desktop/video-desktop@1x.jpg 1x, img/photo/video/desktop/video-desktop@2x.jpg 2x" width="800" height="500"  type="image/jpeg" media="(min-width:1200px)">
+      <source srcset="img/photo/video/tablet/video-tablet@1x.jpg 1x, img/photo/video/tablet/video-tablet@2x.jpg 2x" width="648" height="500" type="image/jpeg" media="(min-width:768px)">
+      <img class="card__img" src="img/photo/video/mobile/video-mobile@1x.jpg" width="280" height="177"
+      srcset="img/photo/video/mobile/video-mobile@1x.jpg 1x, img/photo/video/mobile/video-mobile@2x.jpg 2x"  alt="Видео">
+    </picture>
   </div>
 
   <footer class="main-footer">
