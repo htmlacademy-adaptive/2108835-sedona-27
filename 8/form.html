@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>HTML Academy: Седона</title>
+  <link href="css/style.css" rel="stylesheet">
+  <base href="https://htmlacademy-adaptive.github.io/2108835-sedona-27/8/">
+</head>
+<body class="page__body">
+  <div class="wrapper">
+  <header class="main-header">
+    <nav class="main-nav main-nav--closed">
+      <button class="main-nav__toggle" type="button">
+        <span class="visually-hidden">Открыть меню</span>
+      </button>
+      <div class="main-nav__wrapper">
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item  ">
+            <a class="site-list__item-link" href="index.html">
+              Главная
+            </a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__item-link" href="photo.html">
+              Фото и Видео
+            </a>
+          </li>
+          <li class="site-list__item site-list__item--current">
+            <a class="site-list__item-link">
+              Форма Отзыва
+            </a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__item-link" href="#">
+              HTML Academy
+            </a>
+          </li>
+          <div class="site-list__item--logo">
+            <a class="main-nav__logo">
+              <img src="img/main-logo.svg" width="185" height="96" alt="Седона">
+            </a>
+          </div>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main class="form-container">
+
+    <section class="hero-photo">
+      <img class="photo-logo" src="img/catalog-main-logo-container.png" alt="Главная" width="461" height="80">
+  </section>
+
+    <div class="description-container">
+      <h2 class="description-container__title">Оставьте свой отзыв</h2>
+      <p class="description-container__paragraph">
+        Помогите нашим отелям стать лучше! оставьте отзыв о них,<br>
+       а также о посещенных вами достопримечательностях</p>
+    </div>
+
+<form class="form-feedback" action="https://echo.htmlacademy.ru/courses" method="post">
+  <div class="contact">
+    <section class="contact__fullname fullname">
+       <h2 class="fullname__title">Представьтесь:</h2>
+       <label  for="first-name-field">Имя*:</label> <!--хз нужен тут класс нет для лейбла, если нужен, то это class="fullname__first-name", ну и по порядку class="fullname__last-name"" -->
+       <input type="text" name="name" id="first-name-field" placeholder="Пётр" required>
+        <label for="last-name-field">Фамилия*:</label>
+         <input type="text" name="name" id="last-name-field" placeholder="Пустота" required>
+        <label for="middle-name-field">Отчество:</label>
+        <input type="text" name="name" id="middle-name-field" placeholder="Викторович">
+     </section>
+     <section class="contact__information information">
+        <h2 class="information__title">Контактная информация:</h2>
+         <label for="phone-field">Контактный телефон*:</label>
+        <input type="text" name="phone" id="phone-field" placeholder="Введите телефон" required>
+          <label for="email-field">Электронная почта*:</label>
+          <input type="email" name="e-mail" id="email-field" placeholder="Введите e-mail" required>
+     </section>
+   </div>
+
+   <section class="feeling">
+     <fieldset class="form-feedback__section">
+        <legend class="feeling__title">Ваше общее впечатление:</legend>
+        <ul class="feeling__list">
+          <li class="feeling__item">
+           <label class="feeling__label">
+             <input class="feeling__input" type="radio" name="type-of-feeling" value="good" checked>
+             <span class="control-mark"></span> <!-- это чтобы потом в цсс сделать красивые кружочки-->
+             <span class="feeling__title">Скорее положительное</span>
+           </label>
+         </li>
+          <li class="feeling__item">
+           <label class="feeling__label">
+              <input class="feeling__input " type="radio" name="type-of-feeling" value="bad">
+              <span class="control-mark"></span>
+              <span class="feeling__title">Скорее отрицательное</span>
+           </label>
+         </li>
+         <li class="feeling__item">
+           <label class="feeling__label">
+              <input class="feeling__input" type="radio" name="type-of-feeling" value="neutral">
+             <span class="control-mark"></span>
+             <span class="feeling__title">Затрудняюсь ответить</span>
+            </label>
+         </li>
+        </ul>
+     </fieldset>
+   </section>
+    <section class="benefits">
+      <h2 class="visually-hidden">Список посещенных достопримичательностей</h2>
+      <div class="benefits__wrappers">
+       <fieldset class="form-feedback__section">
+         <legend class="benefits__title">Посещенные достопримечательности:</legend>
+         <ul class="benefits__list">
+           <li class="benefits__item">
+             <label class="benefits__label">
+                <input class="benefits__input" type="checkbox" name="swimming-pool" checked>
+                <span class="control-label">Мост Дьявола</span>
+             </label>
+            </li>
+            <li class="benefits__item">
+             <label class="benefits__label">
+               <input class="benefits__input" type="checkbox" name="swimming-pool" checked>
+               <span class="control-label">Гора-Колокол</span>
+             </label>
+            </li>
+           <li class="benefits__item">
+              <label class="benefits__label">
+                <input class="benefits__input" type="checkbox" name="swimming-pool" checked>
+                <span class="control-label">Слайд-парк</span>
+              </label>
+           </li>
+           <li class="benefits__item">
+             <label class="benefits__label">
+               <input class="benefits__input" type="checkbox" name="swimming-pool">
+               <span class="control-label">Красные скалы</span>
+             </label>
+           </li>
+          </ul>
+       </fieldset>
+      </div>
+    </section>
+    <section class="feedback">
+      <h2 class="feedback__title">Опишите свои эмоции:</h2>
+      <div class="feedback__row">
+        <textarea class="feedback__description" rows="5" placeholder="Опишите подробно все свои восторги"></textarea>
+      </div>
+   </section>
+    <section class="review">
+     <h2 class="visually-hidden">Кнопка отправки отзыва</h2>
+      <input type="submit">
+      <p class="review__description">* — обязательные поля</p>
+    </section>
+</form>
+
+<footer class="main-footer">
+  <div class="main-footer__wrapper">
+    <div class="main-footer__hashtag hashtag">
+      <b class="hashtag__text">#VISITSEDONA</b>
+    </div>
+    <div class="main-footer__social social">
+      <ul class="social__list">
+        <li class="social__item">
+          <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
+            <span class="visually-hidden">Вконтакте</span>
+            <svg class="social__img" width="24" height="24">
+              <use xlink:href="img/sprite.svg#social__vk"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">
+            <span class="visually-hidden">Телеграм</span>
+            <svg class="social__img" width="24" height="24">
+              <use xlink:href="img/sprite.svg#social__telegram"></use>
+            </svg>
+          </a>
+          <li class="social__item">
+            <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">
+              <span class="visually-hidden">Ютуб</span>
+              <svg class="social__img" width="24" height="24">
+                <use xlink:href="img/sprite.svg#social__youtube"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="main-footer__copyright copyright">
+        <span class="copyright__text">разработано</span>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+          <span class="visually-hidden">HTML Academy</span>
+          <svg class="copyright__img" width="27" height="35">
+            <use xlink:href="img/sprite.svg#logo__htmlacademy"></use>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+  </main>
+</div>
+<script src="./js/script.js" ></script>
+</body>
+</html>
