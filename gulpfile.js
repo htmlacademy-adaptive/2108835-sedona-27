@@ -10,7 +10,7 @@ import terser from 'gulp-terser';
 import htmlmin from 'gulp-htmlmin';
 import squoosh from 'gulp-libsquoosh';
 import svgo from 'gulp-svgo';
-import del from 'gulp-clean'
+import clean from 'gulp-clean'
 
 
 // Styles
@@ -90,6 +90,10 @@ const createWebp = () => {
 
 // CLEAN
 
+export const del = () => {
+  return gulp.src('build', { read: false, allowEmpty: true })
+    .pipe(clean());
+};
 
 // Server
 
@@ -123,7 +127,7 @@ const watcher = () => {
 // Build
 
 export const build = gulp.series(
-  clean,
+  del,
   copy,
   optimizeImages,
   gulp.parallel(
@@ -133,16 +137,12 @@ export const build = gulp.series(
     svg,
     createWebp
   ),
-  gulp.series(
-    server,
-    watcher
-  ),
-);
+  );
 
 // Default
 
 export default gulp.series(
-  clean,
+  del,
   copy,
   copyImages,
   gulp.parallel(
